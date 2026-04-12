@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0E7490;
+  --color-primary-light: #E0F4F8;
+  --color-primary-dark: #0C5E75;
+  --color-bg: #FFFFFF;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #6B7280;
+  --color-border: #EEEEEE;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-text font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-full 
+           shadow-btn hover:bg-primary-dark transition-all duration-200 text-sm md:text-base
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-semibold rounded-full 
+           border border-primary hover:bg-primary-light transition-all duration-200 text-sm md:text-base
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 text-primary font-semibold rounded-full 
+           hover:bg-primary-light transition-all duration-200 text-sm md:text-base;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-border shadow-card p-6;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .badge-teal {
+    @apply badge bg-primary-light text-primary;
+  }
+
+  .badge-green {
+    @apply badge bg-green-50 text-green-700;
+  }
+
+  .badge-orange {
+    @apply badge bg-orange-50 text-orange-700;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-text leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg text-text-secondary leading-relaxed;
+  }
+
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Marquee animation */
+.marquee-container {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Accordion */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+  transition: max-height 0.4s ease-in;
+}
+
+/* Count-up animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stat-animate {
+  animation: countUp 0.8s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0E7490;
+  border-radius: 3px;
+}
+
+/* Mobile bottom padding for sticky CTA */
+.has-sticky-cta {
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .has-sticky-cta {
+    padding-bottom: 0;
+  }
+}
