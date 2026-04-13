@@ -93,7 +93,7 @@ const howItWorks = [
   {
     step: "01",
     title: "Isi Kuesioner Kesehatan",
-    description: "Jawab pertanyaan kesehatan sederhana dalam 5-10 menit. Dokter kami akan meninjau jawaban Anda secara personal.",
+    description: "Jawab pertanyaan kesehatan sederhana dalam 2 menit. Dokter kami akan meninjau jawaban Anda secara personal.",
     icon: "📋",
   },
   {
@@ -163,7 +163,9 @@ export default function HomePage() {
       {/* Trust Marquee */}
       <TrustMarquee />
 
-      {/* Hero Section */}
+      {/* ═══════════════════════════════════════════════
+          HERO SECTION — Quiz CTA as primary element
+      ═══════════════════════════════════════════════ */}
       <section className="relative bg-white overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 pointer-events-none">
@@ -172,7 +174,7 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-light/30 rounded-full blur-3xl" />
         </div>
 
-        <div className="container-custom relative py-16 md:py-24 lg:py-32">
+        <div className="container-custom relative py-16 md:py-24 lg:py-28">
           <div className="max-w-3xl">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-primary-light text-primary text-sm font-semibold px-4 py-2 rounded-full mb-6">
@@ -198,18 +200,45 @@ export default function HomePage() {
               manajemen diabetes — mudah, aman, dan terjangkau.
             </p>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Link href="/quiz" className="btn-primary text-base px-8 py-4">
-                Cek Kesesuaian Anda →
-              </Link>
-              <Link href="/ozempic" className="btn-secondary text-base px-8 py-4">
-                Pelajari Ozempic
+            {/* ── PRIMARY QUIZ CTA — large eye-catching card ── */}
+            <Link
+              href="/quiz"
+              className="group block max-w-xl mb-5 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="bg-gradient-to-br from-primary to-[#0C5E75] px-6 py-5 flex items-center justify-between gap-4">
+                <div>
+                  <div className="text-xl md:text-2xl font-bold text-white mb-1 leading-tight">
+                    Cek Kesesuaian Anda — Gratis
+                  </div>
+                  <div className="text-primary-light text-sm font-medium">
+                    Penilaian kesehatan 2 menit oleh dokter berlisensi IDI
+                  </div>
+                  {/* Micro-trust signals */}
+                  <div className="flex flex-wrap gap-3 mt-3 text-xs text-white/80 font-medium">
+                    <span>⏱️ 2 menit</span>
+                    <span>•</span>
+                    <span>🔒 Privat</span>
+                    <span>•</span>
+                    <span>👨‍⚕️ Ditinjau Dokter</span>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                  <svg className="w-6 h-6 text-white group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Secondary CTA */}
+            <div className="flex items-center gap-4">
+              <Link href="/ozempic" className="text-text-secondary text-sm font-medium hover:text-primary transition-colors">
+                Pelajari Ozempic →
               </Link>
             </div>
 
             {/* Trust signals */}
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-wrap gap-4 items-center mt-6">
               {[
                 "✓ Dokter Berlisensi IDI",
                 "✓ BPOM Resmi",
@@ -235,6 +264,85 @@ export default function HomePage() {
                   <circle cx="60" cy="60" r="8" fill="#0E7490" opacity="0.9"/>
                 </svg>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
+          QUIZ TEASER SECTION
+      ═══════════════════════════════════════════════ */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-primary-light/30 to-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-text mb-3">
+                Apakah Terapi GLP-1 Cocok untuk Anda?
+              </h2>
+              <p className="text-text-secondary text-lg max-w-xl mx-auto">
+                Ribuan orang Indonesia sudah mengecek — mulai penilaian gratis Anda sekarang
+              </p>
+            </div>
+
+            {/* Quiz preview cards — 3 floating overlapping mockups */}
+            <div className="relative h-56 md:h-64 flex items-center justify-center mb-10 select-none">
+              {/* Card 3 — Result (rightmost, behind) */}
+              <div className="absolute right-[5%] md:right-[15%] top-2 w-44 md:w-52 bg-white rounded-2xl shadow-lg border border-border p-4 rotate-3 z-10">
+                <div className="text-[10px] font-semibold text-primary bg-primary-light rounded-full px-2 py-0.5 inline-block mb-2">📊 Hasil</div>
+                <div className="text-sm font-bold text-text mb-1">BMI: 26.1</div>
+                <div className="text-[10px] text-text-secondary mb-2">Kategori: Overweight</div>
+                <div className="text-[10px] font-semibold text-green-700 bg-green-50 rounded px-2 py-1">
+                  ✅ GLP-1 Direkomendasikan
+                </div>
+              </div>
+
+              {/* Card 2 — BMI (middle, slightly behind) */}
+              <div className="absolute left-[5%] md:left-[18%] top-5 w-44 md:w-52 bg-white rounded-2xl shadow-lg border border-border p-4 -rotate-2 z-20">
+                <div className="text-[10px] font-semibold text-text-secondary mb-2">Langkah 4 dari 12</div>
+                <div className="text-sm font-bold text-text mb-2">Tinggi & Berat Badan</div>
+                <div className="flex gap-2">
+                  <div className="flex-1 bg-gray-50 rounded px-2 py-1.5 text-[10px] text-center">
+                    <span className="block font-bold text-text text-sm">165</span>
+                    <span className="text-text-secondary">cm</span>
+                  </div>
+                  <div className="flex-1 bg-gray-50 rounded px-2 py-1.5 text-[10px] text-center">
+                    <span className="block font-bold text-text text-sm">71</span>
+                    <span className="text-text-secondary">kg</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 1 — Gender (front, center) */}
+              <div className="relative w-48 md:w-56 bg-white rounded-2xl shadow-xl border-2 border-primary p-4 z-30">
+                <div className="text-[10px] font-semibold text-text-secondary mb-2">Langkah 1 dari 12</div>
+                <div className="text-sm font-bold text-text mb-3">Jenis kelamin Anda?</div>
+                <div className="flex gap-2">
+                  <div className="flex-1 flex flex-col items-center p-2 border-2 border-primary bg-primary-light rounded-lg">
+                    <span className="text-xl mb-1">👨</span>
+                    <span className="text-[10px] font-semibold text-primary">Pria</span>
+                  </div>
+                  <div className="flex-1 flex flex-col items-center p-2 border-2 border-border bg-white rounded-lg">
+                    <span className="text-xl mb-1">👩</span>
+                    <span className="text-[10px] font-medium text-text">Wanita</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <Link
+                href="/quiz"
+                className="inline-flex items-center gap-2 bg-primary text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#0C5E75] hover:-translate-y-px hover:shadow-md transition-all duration-150"
+              >
+                Mulai Penilaian Sekarang
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <p className="mt-3 text-sm text-text-secondary">
+                Dipercaya oleh 2.500+ orang Indonesia • Gratis, tanpa komitmen
+              </p>
             </div>
           </div>
         </div>
@@ -289,6 +397,24 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+
+          {/* Teal banner after treatment cards */}
+          <div className="mt-10 rounded-2xl bg-primary px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p className="text-white font-semibold text-base md:text-lg">
+                Tidak yakin pengobatan mana yang cocok?
+              </p>
+              <p className="text-primary-light text-sm mt-0.5">
+                Cek kesesuaian Anda dalam 2 menit — gratis, tanpa komitmen
+              </p>
+            </div>
+            <Link
+              href="/quiz"
+              className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-primary font-bold text-sm px-6 py-3 rounded-full hover:bg-primary-light transition-colors whitespace-nowrap"
+            >
+              Cek Kesesuaian Anda →
+            </Link>
           </div>
         </div>
       </section>
@@ -354,9 +480,13 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/quiz" className="btn-primary text-base px-8 py-4">
-              Mulai Sekarang →
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 bg-primary text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#0C5E75] hover:-translate-y-px hover:shadow-md transition-all duration-150"
+            >
+              Mulai Kuesioner Kesehatan →
             </Link>
+            <p className="mt-3 text-sm text-text-secondary">Gratis • 2 menit • Tanpa komitmen</p>
           </div>
         </div>
       </section>
@@ -517,28 +647,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
+      {/* ═══════════════════════════════════════════════
+          BOTTOM QUIZ CTA — replaces newsletter section
+      ═══════════════════════════════════════════════ */}
       <section className="py-16 md:py-20 bg-primary">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
+              Belum Yakin? Cek Kesesuaian Anda
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Mulai Perjalanan Sehat Anda Hari Ini
             </h2>
-            <p className="text-primary-100 text-lg mb-8">
-              Bergabung dengan ribuan pasien Indonesia yang sudah merasakan manfaat GLP-1 dengan bimbingan dokter.
+            <p className="text-primary-light text-lg mb-8">
+              Jawab 12 pertanyaan singkat dan dapatkan rekomendasi personal dari dokter spesialis kami.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Email Anda"
-                className="flex-1 px-4 py-3 rounded-full text-text text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
-              />
-              <button className="bg-white text-primary font-bold px-6 py-3 rounded-full hover:bg-primary-light transition-colors text-sm whitespace-nowrap">
-                Daftar Gratis →
-              </button>
-            </div>
-            <p className="text-primary-200 text-xs mt-4">
-              Tidak ada spam. Edukasi kesehatan terpercaya langsung ke inbox Anda.
+
+            {/* Big quiz CTA card */}
+            <Link
+              href="/quiz"
+              className="group block max-w-md mx-auto mb-5 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="bg-white px-6 py-5 flex items-center justify-between gap-4">
+                <div className="text-left">
+                  <div className="text-lg font-bold text-text mb-1">
+                    Cek Kesesuaian Anda — Gratis
+                  </div>
+                  <div className="text-text-secondary text-sm">
+                    Penilaian 2 menit • Ditinjau dokter • Privat
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:bg-[#0C5E75] transition-colors">
+                  <svg className="w-5 h-5 text-white group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            <p className="text-primary-light text-xs">
+              Dipercaya oleh 2.500+ orang Indonesia • Tidak ada spam. Tanpa komitmen.
             </p>
           </div>
         </div>

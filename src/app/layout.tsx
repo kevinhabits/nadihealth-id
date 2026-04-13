@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import StickyCtaBar from "@/components/StickyCtaBar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -113,11 +109,7 @@ export default function RootLayout({
         />
       </head>
       <body className="has-sticky-cta">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
-        <StickyCtaBar />
+        {children}
       </body>
     </html>
   );
