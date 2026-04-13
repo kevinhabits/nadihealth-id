@@ -8,8 +8,8 @@ const navLinks = [
   { label: "Ozempic", href: "/ozempic" },
   { label: "GLP-1 & Diabetes", href: "/glp1-diabetes" },
   { label: "Turun Berat Badan", href: "/turun-berat-badan" },
+  { label: "Alat Kesehatan", href: "/tools" },
   { label: "Tentang Kami", href: "/tentang-kami" },
-  { label: "Artikel", href: "/artikel" },
   { label: "FAQ", href: "/faq" },
 ];
 
