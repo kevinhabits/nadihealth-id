@@ -491,6 +491,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Clinic Directory Banner */}
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="container-custom">
+          <Link
+            href="/direktori-klinik"
+            className="group block max-w-4xl mx-auto rounded-2xl border-2 border-border hover:border-primary bg-white p-6 md:p-8 transition-all duration-200 hover:shadow-card-hover"
+          >
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+              <div className="w-14 h-14 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl font-bold text-text mb-1 group-hover:text-primary transition-colors">
+                  Direktori Klinik GLP-1 &amp; Diabetes Indonesia
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  Temukan rumah sakit, klinik, apotek, dan platform telehealth di seluruh Indonesia untuk obat GLP-1, penurunan berat badan, dan perawatan diabetes — lengkap dengan data harga.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="inline-flex items-center gap-1 text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                  Lihat Direktori
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Doctor Credibility */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container-custom">
