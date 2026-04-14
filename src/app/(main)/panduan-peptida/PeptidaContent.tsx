@@ -1253,7 +1253,7 @@ export default function PeptidaContent() {
       <div className="bg-primary-light/30 border-b border-border">
         <div className="container-custom py-3 flex flex-wrap items-center justify-center gap-2 text-sm">
           <span className="text-text-secondary">Mencari klinik yang menyediakan terapi peptida?</span>
-          <Link href="/direktori-klinik#bali" className="text-primary font-semibold hover:underline">
+          <Link href="/direktori-klinik" className="text-primary font-semibold hover:underline">
             Lihat Direktori Klinik &rarr;
           </Link>
         </div>
