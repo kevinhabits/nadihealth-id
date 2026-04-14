@@ -491,38 +491,55 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Clinic Directory Banner */}
+      {/* Resource Banners */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container-custom">
-          <Link
-            href="/direktori-klinik"
-            className="group block max-w-4xl mx-auto rounded-2xl border-2 border-border hover:border-primary bg-white p-6 md:p-8 transition-all duration-200 hover:shadow-card-hover"
-          >
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
-              <div className="w-14 h-14 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-4xl mx-auto space-y-4">
+            <Link
+              href="/direktori-klinik"
+              className="group flex items-center gap-4 md:gap-6 rounded-2xl border-2 border-border hover:border-primary bg-white p-5 md:p-6 transition-all duration-200 hover:shadow-card-hover"
+            >
+              <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <div className="flex-1">
-                <h3 className="text-lg md:text-xl font-bold text-text mb-1 group-hover:text-primary transition-colors">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base md:text-lg font-bold text-text group-hover:text-primary transition-colors">
                   Direktori Klinik GLP-1 &amp; Diabetes Indonesia
                 </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  Temukan rumah sakit, klinik, apotek, dan platform telehealth di seluruh Indonesia untuk obat GLP-1, penurunan berat badan, dan perawatan diabetes — lengkap dengan data harga.
+                <p className="text-sm text-text-secondary leading-relaxed mt-0.5 hidden sm:block">
+                  Temukan RS, klinik, apotek, dan platform telehealth untuk obat GLP-1 dan perawatan diabetes — lengkap dengan data harga.
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <span className="inline-flex items-center gap-1 text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
-                  Lihat Direktori
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
+              <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <Link
+              href="/panduan-peptida"
+              className="group flex items-center gap-4 md:gap-6 rounded-2xl border-2 border-border hover:border-primary bg-white p-5 md:p-6 transition-all duration-200 hover:shadow-card-hover"
+            >
+              <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
               </div>
-            </div>
-          </Link>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base md:text-lg font-bold text-text group-hover:text-primary transition-colors">
+                  Panduan Lengkap Peptida 2026
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed mt-0.5 hidden sm:block">
+                  Database 40+ peptida untuk kesehatan, kecantikan &amp; wellness — berbasis riset ilmiah dengan panduan BPOM dan halal.
+                </p>
+              </div>
+              <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

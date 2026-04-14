@@ -158,6 +158,23 @@ export default function DirektoriKlinikPage() {
               Catatan: Semaglutide generik mulai tersedia di pasar terdekat (India meluncurkan generik dengan diskon 80% pada Maret 2026).
               Ini dapat memengaruhi harga di Indonesia dalam beberapa bulan ke depan.
             </p>
+            <Link
+              href="/panduan-peptida"
+              className="mt-6 flex items-center gap-3 p-4 bg-primary-light/40 border border-primary/20 rounded-xl hover:border-primary transition-colors group"
+            >
+              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <span className="block text-sm font-semibold text-text group-hover:text-primary transition-colors">Panduan Lengkap Peptida 2026</span>
+                <span className="block text-xs text-text-secondary">Database 40+ peptida — BPC-157, GHK-Cu, kolagen, dan lainnya dengan riset ilmiah &amp; panduan halal</span>
+              </div>
+              <svg className="w-4 h-4 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
@@ -616,6 +633,14 @@ export default function DirektoriKlinikPage() {
                     <p className="text-xs italic">Bukan klinik — pemasok peptida. Peptida terapeutik diklasifikasikan sebagai senyawa resep-only. Pengadaan sendiri tanpa pengawasan medis memiliki risiko kesehatan dan hukum.</p>
                   </div>
                 </div>
+              </div>
+              <div className="my-6 p-4 bg-primary-light/30 border border-primary/20 rounded-xl text-sm">
+                <span className="font-semibold text-text">Ingin tahu lebih lanjut tentang peptida?</span>{" "}
+                <span className="text-text-secondary">Lihat </span>
+                <Link href="/panduan-peptida" className="text-primary font-semibold hover:underline">Panduan Lengkap Peptida 2026</Link>
+                <span className="text-text-secondary"> — database 40+ peptida dengan riset ilmiah, regulasi BPOM, dan panduan halal.</span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="card">
                   <h4 className="text-base font-bold text-text mb-2">3.8 SOS Medika Klinik Bali</h4>
                   <div className="text-sm space-y-1 text-text-secondary">

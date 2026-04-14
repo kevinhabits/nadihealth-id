@@ -1,21 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const navLinks = [
   { label: "Beranda", href: "/" },
   { label: "Ozempic", href: "/ozempic" },
   { label: "GLP-1 & Diabetes", href: "/glp1-diabetes" },
   { label: "Turun Berat Badan", href: "/turun-berat-badan" },
-  { label: "Direktori Klinik", href: "/direktori-klinik" },
-  { label: "Alat Kesehatan", href: "/tools" },
   { label: "Tentang Kami", href: "/tentang-kami" },
-  { label: "FAQ", href: "/faq" },
+];
+
+const resourceLinks = [
+  { label: "Direktori Klinik", href: "/direktori-klinik", desc: "RS, klinik & apotek GLP-1 di Indonesia" },
+  { label: "Panduan Peptida", href: "/panduan-peptida", desc: "Database 40+ peptida berbasis riset" },
+  { label: "Alat Kesehatan", href: "/tools", desc: "Kalkulator BMI, biaya & jadwal dosis" },
+  { label: "FAQ", href: "/faq", desc: "Pertanyaan yang sering diajukan" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setResourcesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
@@ -64,6 +80,40 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Sumber Daya Dropdown */}
+            <div ref={dropdownRef} className="relative">
+              <button
+                onClick={() => setResourcesOpen(!resourcesOpen)}
+                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-primary-light rounded-lg transition-colors duration-150"
+              >
+                Sumber Daya
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform duration-150 ${resourcesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {resourcesOpen && (
+                <div className="absolute top-full right-0 mt-1 w-72 bg-white rounded-xl border border-border shadow-lg py-2 z-50">
+                  {resourceLinks.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setResourcesOpen(false)}
+                      className="block px-4 py-2.5 hover:bg-primary-light transition-colors"
+                    >
+                      <span className="block text-sm font-medium text-text">{item.label}</span>
+                      <span className="block text-xs text-text-secondary mt-0.5">{item.desc}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* CTA Button */}
@@ -118,6 +168,22 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+
+              {/* Mobile: Sumber Daya section */}
+              <div className="px-4 pt-3 pb-1">
+                <span className="text-xs font-semibold text-text-secondary uppercase tracking-wider">Sumber Daya</span>
+              </div>
+              {resourceLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="px-4 py-3 text-sm font-medium text-text-secondary hover:text-primary hover:bg-primary-light rounded-lg transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+
               <div className="mt-3 px-4">
                 <Link
                   href="/quiz"
