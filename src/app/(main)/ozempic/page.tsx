@@ -257,9 +257,9 @@ export default function OzempicPage() {
           <h2 className="text-xl font-bold text-text mb-6">Artikel Terkait</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { title: "Panduan Lengkap Ozempic Indonesia", url: "https://nadihealth.org/ozempic-panduan-lengkap", readTime: "8 menit" },
-              { title: "Efek Samping Ozempic dan Cara Mengatasinya", url: "https://nadihealth.org/efek-samping-ozempic-panduan", readTime: "8 menit" },
-              { title: "Wegovy vs Ozempic: Perbedaan Dosis", url: "https://nadihealth.org/wegovy-vs-ozempic-perbedaan", readTime: "7 menit" },
+              { title: "Panduan Lengkap Ozempic Indonesia", url: "https://nadihealth.org/ozempic-adalah/", readTime: "8 menit" },
+              { title: "Efek Samping Ozempic dan Cara Mengatasinya", url: "https://nadihealth.org/semaglutide-efek-samping/", readTime: "8 menit" },
+              { title: "Wegovy vs Ozempic: Perbedaan Dosis", url: "https://nadihealth.org/wegovy-vs-ozempic/", readTime: "7 menit" },
             ].map((article) => (
               <a
                 key={article.title}

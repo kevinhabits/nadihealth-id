@@ -15,7 +15,7 @@ export const articles: Article[] = [
     excerpt: "Ozempic adalah obat semaglutide yang digunakan untuk manajemen diabetes tipe 2 dan penurunan berat badan. Pelajari cara kerjanya, efek samping, dan cara mendapatkannya di Indonesia.",
     category: "Ozempic",
     readTime: "8 menit",
-    url: "https://nadihealth.org/ozempic-panduan-lengkap",
+    url: "https://nadihealth.org/ozempic-adalah/",
     date: "2024-11-15",
   },
   {
@@ -24,7 +24,7 @@ export const articles: Article[] = [
     excerpt: "GLP-1 receptor agonist telah mengubah paradigma pengobatan diabetes dan obesitas. Dari semaglutide hingga tirzepatide, inilah semua yang perlu Anda ketahui.",
     category: "GLP-1",
     readTime: "10 menit",
-    url: "https://nadihealth.org/glp1-agonist-diabetes-obesitas",
+    url: "https://nadihealth.org/obat-glp1-untuk-diabetes/",
     date: "2024-11-10",
   },
   {
@@ -33,7 +33,7 @@ export const articles: Article[] = [
     excerpt: "Harga Ozempic di Indonesia berkisar antara Rp 2,6 juta hingga Rp 3,1 juta per pen. Ini panduan lengkap harga dan cara mendapatkan resep legal.",
     category: "Ozempic",
     readTime: "5 menit",
-    url: "https://nadihealth.org/harga-ozempic-indonesia-2024",
+    url: "https://nadihealth.org/harga-ozempic-indonesia/",
     date: "2024-11-05",
   },
   {
@@ -42,7 +42,7 @@ export const articles: Article[] = [
     excerpt: "Program penurunan berat badan yang efektif memerlukan pendekatan medis komprehensif. Pelajari bagaimana GLP-1 dapat membantu Anda mencapai target berat badan.",
     category: "Turun BB",
     readTime: "7 menit",
-    url: "https://nadihealth.org/program-penurunan-berat-badan-medis",
+    url: "https://nadihealth.org/penurunan-berat-badan-glp1-panduan/",
     date: "2024-10-28",
   },
   {
@@ -51,7 +51,7 @@ export const articles: Article[] = [
     excerpt: "Pertanyaan tentang status halal semaglutide dan GLP-1 banyak ditanyakan oleh umat Muslim Indonesia. Berikut penjelasan komprehensif dari perspektif fiqih modern.",
     category: "GLP-1",
     readTime: "6 menit",
-    url: "https://nadihealth.org/semaglutide-halal-fatwa-panduan",
+    url: "https://nadihealth.org/ozempic-halal-atau-tidak/",
     date: "2024-10-20",
   },
   {
@@ -60,7 +60,7 @@ export const articles: Article[] = [
     excerpt: "Indonesia memiliki lebih dari 19 juta penderita diabetes. Pelajari faktor risiko, gejala, dan pilihan pengobatan modern termasuk GLP-1.",
     category: "Diabetes",
     readTime: "9 menit",
-    url: "https://nadihealth.org/diabetes-tipe-2-indonesia-statistik",
+    url: "https://nadihealth.org/diabetes-tipe-2-obat-terbaru/",
     date: "2024-10-15",
   },
   {
@@ -69,7 +69,7 @@ export const articles: Article[] = [
     excerpt: "Wegovy dan Ozempic sama-sama mengandung semaglutide, namun memiliki dosis dan indikasi berbeda. Ini perbandingan lengkap keduanya.",
     category: "Ozempic",
     readTime: "7 menit",
-    url: "https://nadihealth.org/wegovy-vs-ozempic-perbedaan",
+    url: "https://nadihealth.org/wegovy-vs-ozempic/",
     date: "2024-10-10",
   },
   {
@@ -78,7 +78,7 @@ export const articles: Article[] = [
     excerpt: "Efek samping Ozempic paling umum adalah mual, muntah, dan sembelit. Pelajari cara mengelola efek samping ini agar pengobatan tetap efektif.",
     category: "Ozempic",
     readTime: "8 menit",
-    url: "https://nadihealth.org/efek-samping-ozempic-panduan",
+    url: "https://nadihealth.org/semaglutide-efek-samping/",
     date: "2024-10-05",
   },
   {
@@ -87,7 +87,7 @@ export const articles: Article[] = [
     excerpt: "Liraglutide atau Victoza adalah obat GLP-1 pertama yang mendapat persetujuan untuk penurunan berat badan. Ini panduan lengkapnya untuk pasien Indonesia.",
     category: "GLP-1",
     readTime: "6 menit",
-    url: "https://nadihealth.org/liraglutide-victoza-panduan",
+    url: "https://nadihealth.org/victoza-liraglutide-panduan/",
     date: "2024-09-28",
   },
   {
@@ -96,7 +96,7 @@ export const articles: Article[] = [
     excerpt: "Tirzepatide adalah GIP/GLP-1 dual agonist yang menunjukkan penurunan berat badan hingga 22% dalam uji klinis. Kapan tersedia di Indonesia?",
     category: "GLP-1",
     readTime: "7 menit",
-    url: "https://nadihealth.org/tirzepatide-mounjaro-panduan",
+    url: "https://nadihealth.org/mounjaro-tirzepatide-indonesia/",
     date: "2024-09-20",
   },
   {
@@ -105,7 +105,7 @@ export const articles: Article[] = [
     excerpt: "Indeks massa tubuh (BMI) adalah alat ukur awal risiko obesitas. Pelajari cara menghitung BMI dan apa artinya bagi kesehatan Anda.",
     category: "Turun BB",
     readTime: "5 menit",
-    url: "https://nadihealth.org/cara-menghitung-bmi-risiko-obesitas",
+    url: "https://nadihealth.org/bmi-kalkulator-obesitas-indonesia/",
     date: "2024-09-15",
   },
   {
@@ -114,7 +114,7 @@ export const articles: Article[] = [
     excerpt: "Pertanyaan umum: apakah BPJS Kesehatan menanggung biaya Ozempic dan obat GLP-1 lainnya? Inilah jawaban lengkap dan alternatifnya.",
     category: "Diabetes",
     readTime: "5 menit",
-    url: "https://nadihealth.org/bpjs-ozempic-glp1-tanggungan",
+    url: "https://nadihealth.org/apakah-bpjs-cover-ozempic/",
     date: "2024-09-10",
   },
   {
@@ -123,7 +123,7 @@ export const articles: Article[] = [
     excerpt: "Mengoptimalkan hasil Ozempic membutuhkan pola makan yang tepat. Ini rekomendasi nutrisi dari dokter spesialis untuk pengguna GLP-1.",
     category: "Turun BB",
     readTime: "8 menit",
-    url: "https://nadihealth.org/pola-makan-pengguna-ozempic",
+    url: "https://nadihealth.org/menu-diet-ozempic-makanan/",
     date: "2024-09-05",
   },
   {
@@ -132,7 +132,7 @@ export const articles: Article[] = [
     excerpt: "Resistensi insulin adalah kondisi dimana sel tubuh tidak merespons insulin dengan baik. Pelajari cara mengatasinya dengan perubahan gaya hidup dan pengobatan.",
     category: "Diabetes",
     readTime: "9 menit",
-    url: "https://nadihealth.org/resistensi-insulin-diabetes-obesitas",
+    url: "https://nadihealth.org/resistensi-insulin-inflamasi-usus-glp1-imunoterapi-arlesmd/",
     date: "2024-08-28",
   },
   {
@@ -141,7 +141,7 @@ export const articles: Article[] = [
     excerpt: "Kombinasi GLP-1 dan olahraga dapat memaksimalkan penurunan berat badan dan kesehatan metabolik. Ini panduan olahraga yang aman dan efektif.",
     category: "Turun BB",
     readTime: "6 menit",
-    url: "https://nadihealth.org/olahraga-pengguna-glp1-panduan",
+    url: "https://nadihealth.org/ozempic-olahraga-gym-fitness/",
     date: "2024-08-20",
   },
 ];
