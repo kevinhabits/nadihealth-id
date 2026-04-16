@@ -271,9 +271,14 @@ export default function TurunBeratBadanPage() {
             <p className="text-text-secondary max-w-2xl mx-auto mb-6">
               Wegovy (semaglutide 2,4mg) dan Mounjaro (tirzepatide) menunjukkan penurunan berat badan yang jauh lebih besar dibanding dosis Ozempic standar. Daftar sekarang untuk mendapat akses pertama.
             </p>
-            <Link href="/quiz" className="btn-primary">
-              Daftarkan Minat Saya →
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/quiz" className="btn-primary">
+                Daftarkan Minat Saya →
+              </Link>
+              <Link href="/harga-glp1" className="btn-secondary">
+                Lihat Harga GLP-1 Saat Ini →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

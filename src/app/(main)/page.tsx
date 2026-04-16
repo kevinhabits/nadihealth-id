@@ -539,6 +539,28 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+            <Link
+              href="/harga-glp1"
+              className="group flex items-center gap-4 md:gap-6 rounded-2xl border-2 border-border hover:border-primary bg-white p-5 md:p-6 transition-all duration-200 hover:shadow-card-hover"
+            >
+              <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base md:text-lg font-bold text-text group-hover:text-primary transition-colors">
+                  Database Harga GLP-1 Indonesia 2026
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed mt-0.5 hidden sm:block">
+                  Bandingkan harga Ozempic, Wegovy, Victoza &amp; Trulicity di apotek online — data terverifikasi dan selalu diperbarui.
+                </p>
+              </div>
+              <svg className="w-5 h-5 text-primary flex-shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

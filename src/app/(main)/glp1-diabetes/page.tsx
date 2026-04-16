@@ -227,6 +227,12 @@ export default function Glp1DiabetesPage() {
           <p className="text-center text-xs text-text-secondary mt-6">
             * Perkiraan penurunan berat badan berdasarkan uji klinis. Hasil individual bervariasi. Konsultasi dokter diperlukan.
           </p>
+
+          <div className="mt-8 text-center">
+            <Link href="/harga-glp1" className="btn-secondary">
+              Lihat Perbandingan Harga Lengkap →
+            </Link>
+          </div>
         </div>
       </section>
 

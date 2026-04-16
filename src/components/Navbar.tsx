@@ -12,6 +12,7 @@ const navLinks = [
 ];
 
 const resourceLinks = [
+  { label: "Harga GLP-1", href: "/harga-glp1", desc: "Bandingkan harga Ozempic, Wegovy & lainnya" },
   { label: "Direktori Klinik", href: "/direktori-klinik", desc: "RS, klinik & apotek GLP-1 di Indonesia" },
   { label: "Panduan Peptida", href: "/panduan-peptida", desc: "Database 40+ peptida berbasis riset" },
   { label: "Alat Kesehatan", href: "/tools", desc: "Kalkulator BMI, biaya & jadwal dosis" },

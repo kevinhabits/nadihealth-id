@@ -79,6 +79,7 @@ export default function Footer() {
                 { label: "Ozempic (Semaglutide)", href: "/ozempic" },
                 { label: "GLP-1 & Diabetes", href: "/glp1-diabetes" },
                 { label: "Turun Berat Badan", href: "/turun-berat-badan" },
+                { label: "Harga GLP-1", href: "/harga-glp1" },
                 { label: "Direktori Klinik", href: "/direktori-klinik" },
                 { label: "Panduan Peptida", href: "/panduan-peptida" },
                 { label: "Alat Kesehatan", href: "/tools" },

@@ -100,6 +100,9 @@ export default function OzempicPage() {
             <div>
               <p className="text-sm text-text-secondary mb-1">Harga Ozempic di Nadi Health</p>
               <p className="text-2xl font-bold text-primary">Rp 2,6 – 3,1 juta<span className="text-base font-normal">/pen (4 dosis)</span></p>
+              <Link href="/harga-glp1" className="text-xs text-primary hover:underline font-medium mt-1 inline-block">
+                Lihat perbandingan harga lengkap di semua apotek →
+              </Link>
             </div>
             <div className="flex items-center gap-6 text-sm text-text-secondary">
               <div className="flex items-center gap-2">
