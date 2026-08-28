@@ -52,7 +52,7 @@ jobs:
 
       - name: Commit updated feed
         run: |
-          if git diff --quiet -- art-world-daily/feed.xml; then
+          if [ -z "$(git status --porcelain -- art-world-daily/feed.xml)" ]; then
             echo "Feed is already current."
             exit 0
           fi
