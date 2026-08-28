@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish a daily RSS item containing the full current Art World Weekly issue."""
+"""Publish a weekly RSS item containing the full current Art World Weekly issue."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ def fetch_source() -> str:
     request = urllib.request.Request(
         SOURCE_URL,
         headers={
-            "User-Agent": "ArtWorldDailyFeed/1.0 (+https://art-world-weekly.vercel.app)"
+            "User-Agent": "ArtWorldWeeklyFullFeed/1.0 (+https://art-world-weekly.vercel.app)"
         },
     )
     with urllib.request.urlopen(request, timeout=45) as response:
@@ -69,16 +69,16 @@ def build_feed(source_title: str, issue_body: str) -> str:
 
     banner = f"""
 <div style="max-width:680px;margin:0 auto 12px;padding:14px 18px;background:#161514;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.55;">
-  <strong>Daily full-content delivery · {html.escape(day_label)}</strong><br>
+  <strong>Weekly full-content delivery · {html.escape(day_label)}</strong><br>
   The complete current Art World Weekly issue is included below, so no click-through is required.
 </div>
 """.strip()
     full_email_html = banner + "\n" + issue_body
 
-    channel_title = "Art World Weekly — Full Issue Daily"
+    channel_title = "Art World Weekly — Full Issue"
     item_title = f"Art World Weekly — full issue — {day_label}"
     description = (
-        "The complete current Art World Weekly issue, delivered directly in the email body."
+        "The complete current Art World Weekly issue, delivered directly in the weekly email body."
     )
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
