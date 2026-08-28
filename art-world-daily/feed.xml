@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Art World Weekly — Full Issue Daily</title>
+    <title>Art World Weekly — Full Issue</title>
     <link>https://art-world-weekly.vercel.app/latest</link>
-    <description>The complete current Art World Weekly issue, delivered directly in the email body.</description>
+    <description>The complete current Art World Weekly issue, delivered directly in the weekly email body.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:15:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 00:15:00 GMT</lastBuildDate>
     <ttl>60</ttl>
     <item>
-      <title>Art World Weekly — full issue — August 28, 2026</title>
+      <title>Art World Weekly — full issue — August 29, 2026</title>
       <link>https://art-world-weekly.vercel.app/latest</link>
-      <guid isPermaLink="false">art-world-weekly-full-daily-2026-08-28</guid>
-      <pubDate>Fri, 28 Aug 2026 00:15:00 GMT</pubDate>
+      <guid isPermaLink="false">art-world-weekly-full-daily-2026-08-29</guid>
+      <pubDate>Sat, 29 Aug 2026 00:15:00 GMT</pubDate>
       <description><![CDATA[<div style="max-width:680px;margin:0 auto 12px;padding:14px 18px;background:#161514;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.55;">
-  <strong>Daily full-content delivery · August 28, 2026</strong><br>
+  <strong>Weekly full-content delivery · August 29, 2026</strong><br>
   The complete current Art World Weekly issue is included below, so no click-through is required.
 </div>
 <div style="background:#f5f1e9;padding:24px 10px;"><div style="max-width:680px;margin:0 auto;background:#fff;padding:36px 34px;font-family:Arial,Helvetica,sans-serif;color:#161514;">
@@ -132,7 +132,7 @@
     <p style="margin:34px 0 0;color:#8a857d;font-size:11px;line-height:1.55;">Curated weekly for Kevin · Curated official listings form the quality floor; live discovery adds current, source-grounded leads without inventing titles, locations, dates or links. · Confirm final hours and ticketing before traveling.</p>
   </div></div>]]></description>
       <content:encoded><![CDATA[<div style="max-width:680px;margin:0 auto 12px;padding:14px 18px;background:#161514;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.55;">
-  <strong>Daily full-content delivery · August 28, 2026</strong><br>
+  <strong>Weekly full-content delivery · August 29, 2026</strong><br>
   The complete current Art World Weekly issue is included below, so no click-through is required.
 </div>
 <div style="background:#f5f1e9;padding:24px 10px;"><div style="max-width:680px;margin:0 auto;background:#fff;padding:36px 34px;font-family:Arial,Helvetica,sans-serif;color:#161514;">
@@ -250,7 +250,7 @@
     <p style="margin:34px 0 0;padding:18px 20px;background:#f5f1e9;color:#3b3834;font-size:14px;line-height:1.55;"><strong>Editorial note:</strong> Closing-soon shows rise to the top automatically; newly reported items are included only when the headline and source establish the location rather than merely implying it.</p>
     <p style="margin:34px 0 0;color:#8a857d;font-size:11px;line-height:1.55;">Curated weekly for Kevin · Curated official listings form the quality floor; live discovery adds current, source-grounded leads without inventing titles, locations, dates or links. · Confirm final hours and ticketing before traveling.</p>
   </div></div>]]></content:encoded>
-      <source url="https://raw.githubusercontent.com/kevinhabits/nadihealth-id/main/art-world-daily/feed.xml">Art World Weekly — Full Issue Daily</source>
+      <source url="https://raw.githubusercontent.com/kevinhabits/nadihealth-id/main/art-world-daily/feed.xml">Art World Weekly — Full Issue</source>
     </item>
   </channel>
 </rss>
