@@ -1,4 +1,4 @@
-name: Publish Art World Daily full-content feed
+name: Publish Art World Weekly full-content feed
 
 on:
   push:
@@ -7,15 +7,15 @@ on:
       - "art-world-daily/generate_feed.py"
       - ".github/workflows/art-world-daily.yml"
   schedule:
-    # 08:05 Asia/Taipei every day (UTC+8 year-round).
-    - cron: "5 0 * * *"
+    # 08:05 Asia/Taipei every Friday (UTC+8 year-round).
+    - cron: "5 0 * * 5"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: art-world-daily-feed
+  group: art-world-weekly-full-feed
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate full-content feed
+      - name: Generate full-content weekly feed
         run: python art-world-daily/generate_feed.py
 
       - name: Validate RSS XML
@@ -60,5 +60,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add art-world-daily/feed.xml
-          git commit -m "Update Art World Daily full-content feed"
+          git commit -m "Update Art World Weekly full-content feed"
           git push
